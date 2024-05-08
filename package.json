@@ -1,0 +1,31 @@
+{
+  "name": "qa-homework",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "QA automatic test task",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "c8 npm test",
+    "prepare": "husky",
+    "husky": "node ./node_modules/husky/lib/bin.js"
+  },
+  "author": "Camilo Delgado",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "esm": "^3.2.25",
+    "globals": "^15.1.0",
+    "husky": "^9.0.11"
+  },
+  "dependencies": {
+    "c8": "^9.1.0",
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3"
+  }
+}
